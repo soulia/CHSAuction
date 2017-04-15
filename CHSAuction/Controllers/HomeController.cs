@@ -10,6 +10,7 @@ namespace CHSAuction.Controllers
     {
         public ActionResult Index()
         {
+            //throw new Exception("My Bad!");
             return View();
         }
 
