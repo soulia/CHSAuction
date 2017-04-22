@@ -1,4 +1,7 @@
-﻿@{
+﻿@*@model IEnumerable<CHSAuction.Models.Item>*@
+@model IEnumerable<CHSAuction.Models.ItemListViewModel>
+
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -6,6 +9,16 @@
     <h1>CHS Auction Site Coming Soon!</h1>
     <p class="lead"></p>
 </div>
+
+@foreach (var item in Model)
+{
+    <div>
+        <h4>@item.Name</h4>
+        <div>@item.Description</div>
+        <div>@item.Value</div>
+        <hr />
+    </div>
+}
 
 <div class="row">
 </div>

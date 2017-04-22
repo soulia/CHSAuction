@@ -1,9 +1,13 @@
-﻿// s.a. Migrations folder
+﻿using System.Data.Entity;
+
+// Package Manager Console
+// ... for migrations ...
+// PM> Enable-Migrations -ContextTypeName AuctionDb
+// s.a. Migrations folder
 // ... then PM> Update-Database
 // For missing Migrations/Initial.cs
 // http://stackoverflow.com/questions/11679385/reset-entity-framework-migrations
 // ===> PM> Add-Migration Initial
-using System.Data.Entity;
 
 namespace CHSAuction.Models
 {
